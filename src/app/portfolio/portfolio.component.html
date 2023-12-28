@@ -1,0 +1,28 @@
+<div class="container">
+  <h1>
+    Projet réalisé lors de la formation POEC (Développeur Java) chez Aston Ecole
+    - Paris, Oct-Dec 2023
+  </h1>
+  <div class="projects">
+    <div class="project" *ngFor="let project of projects1">
+      <h2>{{ project.title }}</h2>
+      <p>{{ project.description }}</p>
+      <p>Back-End: {{ project.backend }}</p>
+      <p>Base de données: {{ project.base }}</p>
+      <p>Front-End: {{ project.frontend }}</p>
+      <a [href]="project.link" target="_blank">Voir projet</a>
+    </div>
+  </div>
+
+  <h1>
+    Liste des projets réalisés lors de la formation Bootcamp Développeur Web
+    (RNCP niveau 5) équivalent BAC+2 chez OpenClassRooms Sep 2022-Mai 2023.
+  </h1>
+  <div class="projects">
+    <div class="project" *ngFor="let project of projects">
+      <h2>{{ project.title }}</h2>
+      <p>{{ project.description }}</p>
+      <a [href]="project.link" target="_blank">Voir Projet</a>
+    </div>
+  </div>
+</div>
